@@ -1,0 +1,227 @@
+[
+    {
+      "hotel_id": "HP001",
+      "name": "Mountain Bliss",
+      "description": "A luxury resort nestled in the hills of Manali.",
+      "star_rating": 5,
+      "category": "Luxury",
+      "location": {
+        "address": "123 Hilltop Road",
+        "city": "Manali",
+        "state": "Himachal Pradesh",
+        "country": "India",
+        "postal_code": "175131",
+        "latitude": 32.2396,
+        "longitude": 77.1887
+      },
+      "contact": {
+        "phone": "+91-9812345678",
+        "email": "info@mountainbliss.com",
+        "website": "https://www.mountainbliss.com"
+      },
+      "amenities": ["Free Wi-Fi", "Spa", "Mountain View", "Swimming Pool"],
+      "services": ["Room Service", "Guided Tours"],
+      "room_types": [
+        {
+          "type": "Deluxe Room",
+          "price_per_night": 8000,
+          "features": ["King Bed", "Mountain View", "Free Breakfast"]
+        }
+      ],
+      "policies": {
+        "check_in_time": "14:00",
+        "check_out_time": "11:00",
+        "cancellation_policy": "Free cancellation within 24 hours",
+        "pet_policy": "Pets not allowed",
+        "smoking_policy": "Non-smoking rooms"
+      },
+      "pricing": {
+        "base_price": 8000,
+        "discounts": [{"description": "Off-season discount", "amount": 1000}],
+        "availability": {"2024-11-01": 5, "2024-11-02": 5}
+      },
+      "media": {
+        "photos": ["https://www.example.com/photos/mountain_bliss.jpg"],
+        "videos": []
+      },
+      "reviews": [
+        {
+          "user_id": "605c72bd0419b903ba3a67e7",
+          "rating": 5,
+          "comment": "Breathtaking views and excellent service!",
+          "date": "2024-10-15"
+        }
+      ],
+      "average_rating": 4.8,
+      "tags": ["Luxury", "Mountain View"]
+    },
+    {
+      "hotel_id": "HP002",
+      "name": "Shimla Heritage",
+      "description": "Experience the colonial charm at Shimla Heritage.",
+      "star_rating": 4,
+      "category": "Heritage",
+      "location": {
+        "address": "Mall Road",
+        "city": "Shimla",
+        "state": "Himachal Pradesh",
+        "country": "India",
+        "postal_code": "171001",
+        "latitude": 31.1048,
+        "longitude": 77.1734
+      },
+      "contact": {
+        "phone": "+91-9812345679",
+        "email": "contact@shimlaheritage.com",
+        "website": "https://www.shimlaheritage.com"
+      },
+      "amenities": ["Free Wi-Fi", "Gym", "City View", "Restaurant"],
+      "services": ["24-hour Room Service", "Historical Tours"],
+      "room_types": [
+        {
+          "type": "Standard Room",
+          "price_per_night": 6000,
+          "features": ["Queen Bed", "City View", "Free Breakfast"]
+        }
+      ],
+      "policies": {
+        "check_in_time": "13:00",
+        "check_out_time": "11:00",
+        "cancellation_policy": "Full refund if canceled within 48 hours",
+        "pet_policy": "Pets allowed",
+        "smoking_policy": "Smoking rooms available"
+      },
+      "pricing": {
+        "base_price": 6000,
+        "discounts": [{"description": "Early bird discount", "amount": 500}],
+        "availability": {"2024-11-01": 3, "2024-11-02": 4}
+      },
+      "media": {
+        "photos": ["https://www.example.com/photos/shimla_heritage.jpg"],
+        "videos": []
+      },
+      "reviews": [
+        {
+          "user_id": "605c72bd0419b903ba3a67e8",
+          "rating": 4,
+          "comment": "Lovely stay with historic ambiance.",
+          "date": "2024-10-20"
+        }
+      ],
+      "average_rating": 4.3,
+      "tags": ["Heritage", "Colonial Charm"]
+    },
+    {
+      "hotel_id": "UK001",
+      "name": "Nainital Lake Retreat",
+      "description": "A serene lakeside retreat in Nainital.",
+      "star_rating": 4,
+      "category": "Lake View",
+      "location": {
+        "address": "Near Naini Lake",
+        "city": "Nainital",
+        "state": "Uttarakhand",
+        "country": "India",
+        "postal_code": "263002",
+        "latitude": 29.3803,
+        "longitude": 79.4636
+      },
+      "contact": {
+        "phone": "+91-9812345680",
+        "email": "stay@lakretreat.com",
+        "website": "https://www.nainitallakeretreat.com"
+      },
+      "amenities": ["Lake View", "Boating", "Nature Walks", "Restaurant"],
+      "services": ["Room Service", "Nature Guides"],
+      "room_types": [
+        {
+          "type": "Suite",
+          "price_per_night": 7500,
+          "features": ["Lake View", "Private Balcony", "King Bed"]
+        }
+      ],
+      "policies": {
+        "check_in_time": "15:00",
+        "check_out_time": "11:00",
+        "cancellation_policy": "50% refund if canceled within 7 days",
+        "pet_policy": "Pets allowed",
+        "smoking_policy": "Non-smoking property"
+      },
+      "pricing": {
+        "base_price": 7500,
+        "discounts": [{"description": "Weekend discount", "amount": 500}],
+        "availability": {"2024-11-01": 2, "2024-11-02": 2}
+      },
+      "media": {
+        "photos": ["https://www.example.com/photos/lake_retreat.jpg"],
+        "videos": []
+      },
+      "reviews": [
+        {
+          "user_id": "605c72bd0419b903ba3a67e9",
+          "rating": 4.5,
+          "comment": "Stunning lake views and great service.",
+          "date": "2024-09-28"
+        }
+      ],
+      "average_rating": 4.6,
+      "tags": ["Lake View", "Nature"]
+    },
+    {
+      "hotel_id": "JK001",
+      "name": "Gulmarg Snow Resort",
+      "description": "A luxury snow resort with ski-in/ski-out access.",
+      "star_rating": 5,
+      "category": "Luxury",
+      "location": {
+        "address": "Snow Valley Road",
+        "city": "Gulmarg",
+        "state": "Jammu and Kashmir",
+        "country": "India",
+        "postal_code": "193403",
+        "latitude": 34.0481,
+        "longitude": 74.3805
+      },
+      "contact": {
+        "phone": "+91-9812345681",
+        "email": "contact@snowresort.com",
+        "website": "https://www.gulmargsnowresort.com"
+      },
+      "amenities": ["Free Wi-Fi", "Ski Access", "Spa", "Mountain View"],
+      "services": ["Ski Rentals", "Room Service"],
+      "room_types": [
+        {
+          "type": "Luxury Suite",
+          "price_per_night": 9500,
+          "features": ["Mountain View", "King Bed", "Fireplace"]
+        }
+      ],
+      "policies": {
+        "check_in_time": "14:00",
+        "check_out_time": "11:00",
+        "cancellation_policy": "Full refund within 72 hours",
+        "pet_policy": "No pets allowed",
+        "smoking_policy": "Non-smoking property"
+      },
+      "pricing": {
+        "base_price": 9500,
+        "discounts": [{"description": "Winter season discount", "amount": 1000}],
+        "availability": {"2024-11-01": 6, "2024-11-02": 4}
+      },
+      "media": {
+        "photos": ["https://www.example.com/photos/snow_resort.jpg"],
+        "videos": []
+      },
+      "reviews": [
+        {
+          "user_id": "605c72bd0419b903ba3a67e0",
+          "rating": 5,
+          "comment": "Fantastic winter experience and luxurious rooms.",
+          "date": "2024-10-05"
+        }
+      ],
+      "average_rating": 4.9,
+      "tags": ["Luxury", "Ski Resort"]
+    }
+  ]
+  

@@ -1,0 +1,202 @@
+[
+    {
+        "place_id": "HP001",
+        "name": "Shimla",
+        "description": "The capital city of Himachal Pradesh known for its colonial architecture and scenic views.",
+        "category": "Hill Station",
+        "location": {
+            "city": "Shimla",
+            "state": "Himachal Pradesh",
+            "country": "India",
+            "latitude": 31.1048,
+            "longitude": 77.1734
+        },
+        "opening_hours": { "Monday": "9:00 AM - 7:00 PM", "Tuesday": "9:00 AM - 7:00 PM" },
+        "entry_fee": "Free",
+        "amenities": ["Parking", "Restrooms", "Food Stalls"],
+        "best_time_to_visit": "March to June",
+        "nearby_hotels": ["Hotel Willow Banks", "The Oberoi Cecil"],
+        "activities": ["Sightseeing", "Shopping"],
+        "media": {
+            "photos": ["https://example.com/shimla1.jpg"],
+            "videos": []
+        },
+        "average_rating": 4.5,
+        "tags": ["Family Friendly", "Nature"]
+    },
+    {
+        "place_id": "HP002",
+        "name": "Manali",
+        "description": "A picturesque town in the Kullu Valley known for adventure sports and scenic landscapes.",
+        "category": "Hill Station",
+        "location": {
+            "city": "Manali",
+            "state": "Himachal Pradesh",
+            "country": "India",
+            "latitude": 32.2396,
+            "longitude": 77.1887
+        },
+        "opening_hours": { "Monday": "Open 24 hours" },
+        "entry_fee": "Free",
+        "amenities": ["Parking", "Guided Tours"],
+        "best_time_to_visit": "April to June, December to February",
+        "nearby_hotels": ["Manu Allaya", "Apple Country Resort"],
+        "activities": ["Paragliding", "Rafting", "Hiking"],
+        "media": {
+            "photos": ["https://example.com/manali1.jpg"],
+            "videos": []
+        },
+        "average_rating": 4.7,
+        "tags": ["Adventure", "Scenic Views"]
+    },
+    {
+        "place_id": "HP003",
+        "name": "Dharamshala",
+        "description": "Home to the Dalai Lama and known for its Tibetan culture and monasteries.",
+        "category": "Religious Site",
+        "location": {
+            "city": "Dharamshala",
+            "state": "Himachal Pradesh",
+            "country": "India",
+            "latitude": 32.2190,
+            "longitude": 76.3234
+        },
+        "opening_hours": { "Monday": "10:00 AM - 5:00 PM" },
+        "entry_fee": "INR 20",
+        "amenities": ["Restrooms", "Guided Tours"],
+        "best_time_to_visit": "March to June, September to December",
+        "nearby_hotels": ["Dharamshala Hotel"],
+        "activities": ["Sightseeing", "Cultural Tours"],
+        "media": {
+            "photos": ["https://example.com/dharamshala1.jpg"],
+            "videos": []
+        },
+        "average_rating": 4.6,
+        "tags": ["Cultural", "Religious"]
+    },
+    {
+        "place_id": "UK001",
+        "name": "Rishikesh",
+        "description": "The Yoga capital of the world and a gateway to the Himalayas.",
+        "category": "Religious Site",
+        "location": {
+            "city": "Rishikesh",
+            "state": "Uttarakhand",
+            "country": "India",
+            "latitude": 30.0869,
+            "longitude": 78.2676
+        },
+        "opening_hours": { "Monday": "Open 24 hours" },
+        "entry_fee": "Free",
+        "amenities": ["Parking", "Restrooms"],
+        "best_time_to_visit": "September to November, March to May",
+        "nearby_hotels": ["Aloha on the Ganges", "Divine Resort"],
+        "activities": ["Yoga", "Rafting", "Camping"],
+        "media": {
+            "photos": ["https://example.com/rishikesh1.jpg"],
+            "videos": []
+        },
+        "average_rating": 4.8,
+        "tags": ["Spiritual", "Adventure"]
+    },
+    {
+        "place_id": "UK002",
+        "name": "Nainital",
+        "description": "A charming hill station known for its lake and pleasant weather.",
+        "category": "Hill Station",
+        "location": {
+            "city": "Nainital",
+            "state": "Uttarakhand",
+            "country": "India",
+            "latitude": 29.3919,
+            "longitude": 79.4542
+        },
+        "opening_hours": { "Monday": "Open 24 hours" },
+        "entry_fee": "Free",
+        "amenities": ["Boating", "Restrooms"],
+        "best_time_to_visit": "March to June",
+        "nearby_hotels": ["The Naini Retreat", "Shervani Hilltop"],
+        "activities": ["Boating", "Shopping", "Hiking"],
+        "media": {
+            "photos": ["https://example.com/nainital1.jpg"],
+            "videos": []
+        },
+        "average_rating": 4.4,
+        "tags": ["Nature", "Relaxing"]
+    },
+    {
+        "place_id": "JK001",
+        "name": "Srinagar",
+        "description": "Famous for its houseboats, gardens, and the Dal Lake.",
+        "category": "City",
+        "location": {
+            "city": "Srinagar",
+            "state": "Jammu and Kashmir",
+            "country": "India",
+            "latitude": 34.0837,
+            "longitude": 74.7973
+        },
+        "opening_hours": { "Monday": "Open 24 hours" },
+        "entry_fee": "Free",
+        "amenities": ["Guided Tours", "Boat Rides"],
+        "best_time_to_visit": "April to October",
+        "nearby_hotels": ["Lalit Grand Palace", "Vivanta Dal View"],
+        "activities": ["Shikara Rides", "Sightseeing"],
+        "media": {
+            "photos": ["https://example.com/srinagar1.jpg"],
+            "videos": []
+        },
+        "average_rating": 4.9,
+        "tags": ["Romantic", "Scenic Views"]
+    },
+    {
+        "place_id": "LK001",
+        "name": "Pangong Lake",
+        "description": "A stunning high-altitude lake in the Himalayas, known for its changing colors.",
+        "category": "Lake",
+        "location": {
+            "city": "Leh",
+            "state": "Ladakh",
+            "country": "India",
+            "latitude": 33.7490,
+            "longitude": 78.4424
+        },
+        "opening_hours": { "Monday": "Open 24 hours" },
+        "entry_fee": "Free",
+        "amenities": ["Camping"],
+        "best_time_to_visit": "May to September",
+        "nearby_hotels": ["Pangong Retreat"],
+        "activities": ["Photography", "Camping"],
+        "media": {
+            "photos": ["https://example.com/pangong1.jpg"],
+            "videos": []
+        },
+        "average_rating": 5.0,
+        "tags": ["Scenic Views", "Adventure"]
+    },
+    {
+        "place_id": "LK002",
+        "name": "Nubra Valley",
+        "description": "A cold desert valley with sand dunes, monasteries, and Bactrian camels.",
+        "category": "Valley",
+        "location": {
+            "city": "Nubra",
+            "state": "Ladakh",
+            "country": "India",
+            "latitude": 34.5155,
+            "longitude": 77.5523
+        },
+        "opening_hours": { "Monday": "Open 24 hours" },
+        "entry_fee": "Free",
+        "amenities": ["Guided Tours", "Camping"],
+        "best_time_to_visit": "June to September",
+        "nearby_hotels": ["Nubra Ecolodge"],
+        "activities": ["Camel Safari", "Trekking"],
+        "media": {
+            "photos": ["https://example.com/nubra1.jpg"],
+            "videos": []
+        },
+        "average_rating": 4.8,
+        "tags": ["Adventure", "Unique"]
+    }
+]
