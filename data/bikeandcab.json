@@ -1,134 +1,182 @@
 [
-    {
-      "bike_rental_id": "BR001",
-      "name": "Himalayan Bike Rentals",
-      "location_id": "HP001",
-      "locationName": "Manali",
-      "description": "Reliable bike rentals in Manali",
-      "vehicle_types": ["Royal Enfield", "Scooter"],
-      "pricing": { "price_per_hour": 200, "price_per_day": 1500, "currency": "INR" },
-      "availability": { "days": ["Monday", "Sunday"], "hours": "8:00 AM - 8:00 PM" },
-      "contact": { "phone_number": "1234567890", "email": "contact@himalayanbikerentals.com" },
-      "ratings": { "average_rating": 4.5, "total_reviews": 120 },
-      "amenities": ["Helmet", "Insurance"]
-    },
-    {
+  {
       "bike_rental_id": "BR002",
-      "name": "Ladakh Riders",
-      "location_id": "L002",
-      "locationName": "Ladkh",
-      "description": "Specialized in long-distance bike rentals in Leh",
-      "vehicle_types": ["Royal Enfield", "Mountain Bike"],
-      "pricing": { "price_per_hour": 250, "price_per_day": 1800, "currency": "INR" },
-      "availability": { "days": ["Monday", "Sunday"], "hours": "9:00 AM - 7:00 PM" },
-      "contact": { "phone_number": "9876543210", "email": "info@ladakhriders.com" },
-      "ratings": { "average_rating": 4.7, "total_reviews": 95 },
-      "amenities": ["Helmet", "Toolkit"]
-    },
-    {
-      "bike_rental_id": "BR003",
-      "name": "Shimla Cab Services",
-      "location_id": "L003",
-      "locationName": "Shimla",
-      "description": "Affordable cab rentals around Shimla",
-      "vehicle_types": ["Sedan", "SUV"],
-      "pricing": { "price_per_km": 15, "flat_rate_city": 200, "currency": "INR" },
-      "availability": { "days": ["Monday", "Sunday"], "hours": "24 Hours" },
-      "contact": { "phone_number": "9988776655", "email": "booking@shimlacabs.com" },
-      "ratings": { "average_rating": 4.3, "total_reviews": 80 },
-      "service_areas": ["Shimla", "Kufri"],
-      "safety_measures": ["COVID-19 Safety"]
-    },
-    {
-      "bike_rental_id": "BR004",
-      "name": "Nainital Adventures",
-      "location_id": "L004",
-      "locationName": "Nainital",
-      "description": "Popular bike rental in Nainital",
-      "vehicle_types": ["Scooter", "Mountain Bike"],
-      "pricing": { "price_per_hour": 150, "price_per_day": 1200, "currency": "INR" },
-      "availability": { "days": ["Monday", "Sunday"], "hours": "7:00 AM - 9:00 PM" },
-      "contact": { "phone_number": "1122334455", "email": "contact@nainitaladventures.com" },
-      "ratings": { "average_rating": 4.4, "total_reviews": 67 },
-      "amenities": ["Helmet", "GPS Tracker"]
-    },
-    {
-      "bike_rental_id": "BR005",
-      "name": "Gulmarg Cab Rentals",
-      "location_id": "L005",
-      "locationName": "Gulmarg",
-      "description": "24/7 cab services in Gulmarg",
-      "vehicle_types": ["Hatchback", "SUV"],
-      "pricing": { "price_per_km": 18, "flat_rate_city": 250, "currency": "INR" },
-      "availability": { "days": ["Monday", "Sunday"], "hours": "24 Hours" },
-      "contact": { "phone_number": "7788990011", "email": "info@gulmargcabrentals.com" },
-      "ratings": { "average_rating": 4.1, "total_reviews": 60 },
-      "service_areas": ["Gulmarg", "Srinagar"]
-    },
-    {
-      "bike_rental_id": "BR006",
-      "name": "Manali Scooters",
-      "location_id": "L006",
+      "name": "RIDE MOTO ADVENTURES",
+      "location_id": "HP002",
       "locationName": "Manali",
-      "description": "Convenient scooter rentals in Manali",
-      "vehicle_types": ["Scooter"],
-      "pricing": { "price_per_hour": 100, "price_per_day": 800, "currency": "INR" },
-      "availability": { "days": ["Monday", "Sunday"], "hours": "8:00 AM - 6:00 PM" },
-      "contact": { "phone_number": "4455667788", "email": "book@manaliscooters.com" },
-      "ratings": { "average_rating": 4.6, "total_reviews": 55 },
-      "amenities": ["Helmet", "Basic Toolkit"]
-    },
-    {
-      "bike_rental_id": "BR007",
-      "name": "Leh Scooter Service",
-      "location_id": "L007",
-      "locationName": "Leh",
-      "description": "Affordable scooter rentals for Leh",
-      "vehicle_types": ["Scooter"],
-      "pricing": { "price_per_hour": 120, "price_per_day": 900, "currency": "INR" },
+      "description": "Explore Manali on wheels with Mountain Riders.",
+      "vehicle_types": ["Royal Enfield", "Scooter", "ATV"],
+      "pricing": { "price_per_hour": 250, "price_per_day": 1600, "currency": "INR" },
+      "availability": { "days": ["Monday", "Sunday"], "hours": "7:00 AM - 9:00 PM" },
+      "contact": { "phone_number": "1234567891", "email": "info@mountainriders.com" },
+      "ratings": { "average_rating": 4.7, "total_reviews": 150 },
+      "amenities": ["Helmet", "Insurance", "GPS"],
+      "media": {
+          "photos": ["https://lh3.googleusercontent.com/p/AF1QipOnh0Vg8jCqqXs4OolE03Vtrzu3sGnL5xNUZ7zO=s680-w680-h510",
+          "https://lh3.googleusercontent.com/p/AF1QipPE3eNTpZZDvKQ30t0hrsXdinBhhROY8EgkBhAp=s680-w680-h510"
+        ]
+      }
+  },
+  {
+      "bike_rental_id": "BR003",
+      "name": "Adventure Wheels",
+      "location_id": "HP003",
+      "locationName": "Kullu",
+      "description": "Affordable bike rentals for Kullu's adventures.",
+      "vehicle_types": ["Royal Enfield", "Bajaj Pulsar"],
+      "pricing": { "price_per_hour": 200, "price_per_day": 1400, "currency": "INR" },
       "availability": { "days": ["Monday", "Sunday"], "hours": "8:00 AM - 7:00 PM" },
-      "contact": { "phone_number": "9988775544", "email": "services@lehscooters.com" },
-      "ratings": { "average_rating": 4.3, "total_reviews": 52 },
-      "amenities": ["Helmet", "Maps"]
-    },
-    {
-      "bike_rental_id": "BR008",
-      "name": "Dehradun Bike Rentals",
-      "location_id": "L008",
+      "contact": { "phone_number": "1234567892", "email": "support@adventurewheels.com" },
+      "ratings": { "average_rating": 4.3, "total_reviews": 98 },
+      "amenities": ["Helmet", "Roadside Assistance"],
+      "media": {
+          "photos": ["https://lh3.googleusercontent.com/p/AF1QipOnh0Vg8jCqqXs4OolE03Vtrzu3sGnL5xNUZ7zO=s680-w680-h510",
+          "https://lh3.googleusercontent.com/p/AF1QipPE3eNTpZZDvKQ30t0hrsXdinBhhROY8EgkBhAp=s680-w680-h510"
+        ]
+      }
+  },
+  {
+      "bike_rental_id": "BR004",
+      "name": "Himalayan Thrill Rides",
+      "location_id": "HP004",
+      "locationName": "Kasol",
+      "description": "Top-notch bikes for Kasol and nearby areas.",
+      "vehicle_types": ["Royal Enfield", "Honda Activa"],
+      "pricing": { "price_per_hour": 220, "price_per_day": 1450, "currency": "INR" },
+      "availability": { "days": ["Monday", "Sunday"], "hours": "9:00 AM - 8:00 PM" },
+      "contact": { "phone_number": "1234567893", "email": "info@himalayanthrillrides.com" },
+      "ratings": { "average_rating": 4.6, "total_reviews": 120 },
+      "amenities": ["Helmet", "Insurance", "24/7 Support"],
+      "media": {
+          "photos": ["https://lh3.googleusercontent.com/p/AF1QipOnh0Vg8jCqqXs4OolE03Vtrzu3sGnL5xNUZ7zO=s680-w680-h510",
+          "https://lh3.googleusercontent.com/p/AF1QipPE3eNTpZZDvKQ30t0hrsXdinBhhROY8EgkBhAp=s680-w680-h510"
+        ]
+      }
+  },
+  {
+      "bike_rental_id": "BR005",
+      "name": "EcoMoto",
+      "location_id": "UK001",
+      "locationName": "Rishikesh",
+      "description": "Eco-friendly bike rentals in Rishikesh.",
+      "vehicle_types": ["Electric Bike", "Scooter"],
+      "pricing": { "price_per_hour": 180, "price_per_day": 1300, "currency": "INR" },
+      "availability": { "days": ["Monday", "Sunday"], "hours": "7:00 AM - 6:00 PM" },
+      "contact": { "phone_number": "1234567894", "email": "info@ecomoto.com" },
+      "ratings": { "average_rating": 4.5, "total_reviews": 85 },
+      "amenities": ["Helmet", "Eco-Friendly Vehicles"],
+      "media": {
+          "photos": ["https://lh3.googleusercontent.com/p/AF1QipOnh0Vg8jCqqXs4OolE03Vtrzu3sGnL5xNUZ7zO=s680-w680-h510",
+          "https://lh3.googleusercontent.com/p/AF1QipPE3eNTpZZDvKQ30t0hrsXdinBhhROY8EgkBhAp=s680-w680-h510"
+        ]
+      }
+  },
+  {
+      "bike_rental_id": "BR006",
+      "name": "Freedom Wheels",
+      "location_id": "UK002",
       "locationName": "Dehradun",
-      "description": "Bikes for exploring Dehradun",
-      "vehicle_types": ["Scooter", "Royal Enfield"],
-      "pricing": { "price_per_hour": 200, "price_per_day": 1600, "currency": "INR" },
-      "availability": { "days": ["Monday", "Sunday"], "hours": "9:00 AM - 9:00 PM" },
-      "contact": { "phone_number": "8899776655", "email": "contact@dehradunbikes.com" },
-      "ratings": { "average_rating": 4.5, "total_reviews": 77 },
-      "amenities": ["Helmet", "GPS Tracker"]
-    },
-    {
+      "description": "Best bike rental in Dehradun for all types of riders.",
+      "vehicle_types": ["Royal Enfield", "Honda CB Hornet"],
+      "pricing": { "price_per_hour": 240, "price_per_day": 1500, "currency": "INR" },
+      "availability": { "days": ["Monday", "Sunday"], "hours": "8:00 AM - 9:00 PM" },
+      "contact": { "phone_number": "1234567895", "email": "contact@freedomwheels.com" },
+      "ratings": { "average_rating": 4.4, "total_reviews": 110 },
+      "amenities": ["Helmet", "Insurance", "24/7 Support"],
+      "media": {
+          "photos": ["https://lh3.googleusercontent.com/p/AF1QipOnh0Vg8jCqqXs4OolE03Vtrzu3sGnL5xNUZ7zO=s680-w680-h510",
+          "https://lh3.googleusercontent.com/p/AF1QipPE3eNTpZZDvKQ30t0hrsXdinBhhROY8EgkBhAp=s680-w680-h510"
+        ]
+      }
+  },
+  {
+      "bike_rental_id": "BR007",
+      "name": "Ganga Riders",
+      "location_id": "UK003",
+      "locationName": "Haridwar",
+      "description": "Explore Haridwar and nearby regions on bikes.",
+      "vehicle_types": ["Scooter", "Bajaj Avenger"],
+      "pricing": { "price_per_hour": 200, "price_per_day": 1200, "currency": "INR" },
+      "availability": { "days": ["Monday", "Sunday"], "hours": "7:00 AM - 8:00 PM" },
+      "contact": { "phone_number": "1234567896", "email": "info@gangariders.com" },
+      "ratings": { "average_rating": 4.2, "total_reviews": 105 },
+      "amenities": ["Helmet", "Insurance", "Roadside Assistance"],
+      "media": {
+          "photos": ["https://lh3.googleusercontent.com/p/AF1QipOnh0Vg8jCqqXs4OolE03Vtrzu3sGnL5xNUZ7zO=s680-w680-h510",
+          "https://lh3.googleusercontent.com/p/AF1QipPE3eNTpZZDvKQ30t0hrsXdinBhhROY8EgkBhAp=s680-w680-h510"
+        ]
+      }
+  },
+  {
+      "bike_rental_id": "BR008",
+      "name": "Himalaya Bike Point",
+      "location_id": "HP005",
+      "locationName": "Shimla",
+      "description": "Reliable bike rentals in Shimla with experienced guides.",
+      "vehicle_types": ["Royal Enfield", "Scooter"],
+      "pricing": { "price_per_hour": 250, "price_per_day": 1600, "currency": "INR" },
+      "availability": { "days": ["Monday", "Sunday"], "hours": "8:00 AM - 8:00 PM" },
+      "contact": { "phone_number": "1234567897", "email": "contact@himalayabikepoint.com" },
+      "ratings": { "average_rating": 4.5, "total_reviews": 125 },
+      "amenities": ["Helmet", "Insurance", "Maps"],
+      "media": {
+          "photos": ["https://lh3.googleusercontent.com/p/AF1QipOnh0Vg8jCqqXs4OolE03Vtrzu3sGnL5xNUZ7zO=s680-w680-h510",
+          "https://lh3.googleusercontent.com/p/AF1QipPE3eNTpZZDvKQ30t0hrsXdinBhhROY8EgkBhAp=s680-w680-h510"
+        ]
+      }
+  },
+  {
       "bike_rental_id": "BR009",
-      "name": "Srinagar Cab Rentals",
-      "location_id": "L009",
-      "locationName": "Srinagar",
-      "description": "Reliable cab rentals around Srinagar",
-      "vehicle_types": ["Sedan", "SUV"],
-      "pricing": { "price_per_km": 20, "flat_rate_city": 300, "currency": "INR" },
-      "availability": { "days": ["Monday", "Sunday"], "hours": "24 Hours" },
-      "contact": { "phone_number": "1234123412", "email": "info@srinagarcabs.com" },
-      "ratings": { "average_rating": 4.2, "total_reviews": 65 },
-      "service_areas": ["Srinagar", "Pahalgam"]
-    },
-    {
+      "name": "Everest Riders",
+      "location_id": "HP006",
+      "locationName": "Dharamshala",
+      "description": "A trusted name for bike rentals in Dharamshala.",
+      "vehicle_types": ["Royal Enfield", "Honda Activa"],
+      "pricing": { "price_per_hour": 220, "price_per_day": 1400, "currency": "INR" },
+      "availability": { "days": ["Monday", "Sunday"], "hours": "8:00 AM - 8:00 PM" },
+      "contact": { "phone_number": "1234567898", "email": "info@everestriders.com" },
+      "ratings": { "average_rating": 4.3, "total_reviews": 140 },
+      "amenities": ["Helmet", "Insurance"],
+      "media": {
+          "photos": ["https://lh3.googleusercontent.com/p/AF1QipOnh0Vg8jCqqXs4OolE03Vtrzu3sGnL5xNUZ7zO=s680-w680-h510",
+          "https://lh3.googleusercontent.com/p/AF1QipPE3eNTpZZDvKQ30t0hrsXdinBhhROY8EgkBhAp=s680-w680-h510"
+        ]
+      }
+  },
+  {
       "bike_rental_id": "BR010",
-      "name": "Uttarkashi Adventures",
-      "location_id": "L010",
-      "locationName": "Uttarkashi",
-      "description": "Bike and SUV rentals for Uttarkashi",
-      "vehicle_types": ["SUV", "Royal Enfield"],
-      "pricing": { "price_per_hour": 250, "price_per_day": 1800, "currency": "INR" },
-      "availability": { "days": ["Monday", "Sunday"], "hours": "8:00 AM - 6:00 PM" },
-      "contact": { "phone_number": "3344556677", "email": "services@uttarkashiadventures.com" },
-      "ratings": { "average_rating": 4.6, "total_reviews": 70 },
-      "amenities": ["Helmet", "24/7 Assistance"]
-    }
+      "name": "Ride Himalaya",
+      "location_id": "HP007",
+      "locationName": "Palampur",
+      "description": "Explore Palampur with quality bikes and top service.",
+      "vehicle_types": ["Royal Enfield", "Yamaha FZ"],
+      "pricing": { "price_per_hour": 230, "price_per_day": 1500, "currency": "INR" },
+      "availability": { "days": ["Monday", "Sunday"], "hours": "8:00 AM - 8:00 PM" },
+      "contact": { "phone_number": "1234567899", "email": "contact@ridehimalaya.com" },
+      "ratings": { "average_rating": 4.6, "total_reviews": 130 },
+      "amenities": ["Helmet", "Insurance", "GPS"],
+      "media": {
+          "photos": ["https://lh3.googleusercontent.com/p/AF1QipOnh0Vg8jCqqXs4OolE03Vtrzu3sGnL5xNUZ7zO=s680-w680-h510",
+          "https://lh3.googleusercontent.com/p/AF1QipPE3eNTpZZDvKQ30t0hrsXdinBhhROY8EgkBhAp=s680-w680-h510"
+        ]
+      }
+  },
+  {
+      "bike_rental_id": "BR011",
+      "name": "Peak Riders",
+      "location_id": "HP008",
+      "locationName": "Solang Valley",
+      "description": "Perfect for thrill seekers exploring Solang Valley.",
+      "vehicle_types": ["Royal Enfield", "Bajaj Avenger"],
+      "pricing": { "price_per_hour": 250, "price_per_day": 1600, "currency": "INR" },
+      "availability": { "days": ["Monday", "Sunday"], "hours": "8:00 AM - 8:00 PM" },
+      "contact": { "phone_number": "1234567800", "email": "contact@peakriders.com" },
+      "ratings": { "average_rating": 4.8, "total_reviews": 145 },
+      "amenities": ["Helmet", "Insurance", "First Aid Kit"],
+      "media": {
+          "photos": ["https://lh3.googleusercontent.com/p/AF1QipOnh0Vg8jCqqXs4OolE03Vtrzu3sGnL5xNUZ7zO=s680-w680-h510",
+          "https://lh3.googleusercontent.com/p/AF1QipPE3eNTpZZDvKQ30t0hrsXdinBhhROY8EgkBhAp=s680-w680-h510"
+        ]
+      }
+  }
 ]
-  
