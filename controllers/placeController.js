@@ -5,7 +5,7 @@ const PetrolStation = require('../models/PetrolStationModel'); // PetrolStation 
 const { getSeason } = require('../helper/SeasonCount');
 // Controller to search places by name or state
 const getSearchPlaces = async (req, res) => {
-  const { query, page = 1, limit = 10 } = req.query; // Default to page 1 and limit 10
+  const { query, page = 1, limit } = req.query; // Default to page 1 and limit 10
 
   if (!query) {
     return res.status(400).json({ error: 'Search term is required' });
