@@ -6,6 +6,14 @@ const userSchema = new mongoose.Schema({
   name: { type: String, required: true },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
+  contact: { type: String}, // User's contact number
+  isVerified: { type: Boolean, default: false }, // Verification status
+  recentVisits: [{ 
+    placeId: { type: mongoose.Schema.Types.ObjectId, ref: 'Place' }, 
+    visitedAt: { type: Date, default: Date.now } 
+  }],
+  totalExpense: { type: Number, default: 0 }, // Total expenses of the user
+  token: { type: String }, // Token for authentication or verification
 });
 
 // Hash password before saving user
@@ -15,9 +23,6 @@ userSchema.pre('save', async function (next) {
   next();
 });
 
-// Check password
-userSchema.methods.comparePassword = function (candidatePassword) {
-  return bcrypt.compare(candidatePassword, this.password);
-};
+
 
 module.exports = mongoose.model('User', userSchema);

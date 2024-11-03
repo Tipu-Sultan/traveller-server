@@ -151,12 +151,12 @@ const getPlaceWithNearbyServices = async (req, res) => {
 // Fetch Featured Places based on Season
 const fetchFeaturedPlaces = async (req, res) => {
   try {
-    // Fetch all places from the database
-    const places = await Place.find();
+    // Fetch only places with an average rating greater than 4.7
+    const places = await Place.find({ average_rating: { $gt: 4.8 } });
 
     // Check if places were found
     if (!places || places.length === 0) {
-      return res.status(404).json({ message: 'No places found.' });
+      return res.status(404).json({ message: 'No places found with rating above 4.7.' });
     }
 
     // Respond with the fetched places
@@ -166,8 +166,6 @@ const fetchFeaturedPlaces = async (req, res) => {
     res.status(500).json({ error: 'Error fetching featured places' });
   }
 };
-
-
 
 
 module.exports = {

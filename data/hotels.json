@@ -1,239 +1,385 @@
 [
   {
-      "hotel_id": "HP002",
-      "name": "Valley Retreat",
-      "description": "A tranquil getaway with stunning valley views and modern amenities.",
-      "star_rating": 4,
-      "category": "Luxury",
-      "location": {
-          "address": "22 Valley Lane",
-          "city": "Manali",
-          "state": "Himachal Pradesh",
-          "country": "India",
-          "postal_code": "175131",
-          "latitude": 32.2500,
-          "longitude": 77.2000
-      },
-      "contact": {
-          "phone": "+91-9812345679",
-          "email": "info@valleyretreat.com",
-          "website": "https://www.valleyretreat.com"
-      },
-      "amenities": ["Free Wi-Fi", "Mountain View", "Outdoor Pool"],
-      "services": ["Room Service", "Guided Trekking"],
-      "room_types": [
-          {
-              "type": "Superior Room",
-              "price_per_night": 7000,
-              "features": ["Queen Bed", "Valley View", "Complimentary Breakfast"]
-          }
+    "hotel_id": "HP002",
+    "name": "Valley Retreat",
+    "description": "A tranquil getaway with stunning valley views and modern amenities.",
+    "star_rating": 4,
+    "category": "Luxury",
+    "location": {
+      "address": "22 Valley Lane",
+      "city": "Manali",
+      "state": "Himachal Pradesh",
+      "country": "India",
+      "postal_code": "175131",
+      "latitude": 32.25,
+      "longitude": 77.2
+    },
+    "contact": {
+      "phone": "+91-9812345679",
+      "email": "info@valleyretreat.com",
+      "website": "https://www.valleyretreat.com"
+    },
+    "amenities": ["Free Wi-Fi", "Mountain View", "Outdoor Pool"],
+    "services": ["Room Service", "Guided Trekking"],
+    "room_types": [
+      {
+        "type": "Superior Room",
+        "price_per_night": 7000,
+        "features": ["Queen Bed", "Valley View", "Complimentary Breakfast"]
+      }
+    ],
+    "policies": {
+      "check_in_time": "15:00",
+      "check_out_time": "12:00",
+      "cancellation_policy": "Free cancellation up to 48 hours before check-in",
+      "pet_policy": "Pets allowed",
+      "smoking_policy": "Non-smoking rooms"
+    },
+    "pricing": {
+      "base_price": 7000,
+      "discounts": [{ "description": "Early bird discount", "amount": 500 }],
+      "availability": { "2024-11-01": 10, "2024-11-02": 8 }
+    },
+    "media": {
+      "photos": [
+        "https://r1imghtlak.mmtcdn.com/1451e4a6889911eb98520242ac110003.jpg?output-quality=75&downsize=*:350&crop=520:350;51,0&output-format=jpg",
+        "https://r1imghtlak.mmtcdn.com/1451e4a6889911eb98520242ac110003.jpg?output-quality=75&downsize=*:350&crop=520:350;51,0&output-format=jpg",
+        "https://r1imghtlak.mmtcdn.com/1451e4a6889911eb98520242ac110003.jpg?output-quality=75&downsize=*:350&crop=520:350;51,0&output-format=jpg",
+        "https://r1imghtlak.mmtcdn.com/1451e4a6889911eb98520242ac110003.jpg?output-quality=75&downsize=*:350&crop=520:350;51,0&output-format=jpg"
       ],
-      "policies": {
-          "check_in_time": "15:00",
-          "check_out_time": "12:00",
-          "cancellation_policy": "Free cancellation up to 48 hours before check-in",
-          "pet_policy": "Pets allowed",
-          "smoking_policy": "Non-smoking rooms"
-      },
-      "pricing": {
-          "base_price": 7000,
-          "discounts": [{"description": "Early bird discount", "amount": 500}],
-          "availability": {"2024-11-01": 10, "2024-11-02": 8}
-      },
-      "media": {
-          "photos": [
-            "https://r1imghtlak.mmtcdn.com/1451e4a6889911eb98520242ac110003.jpg?output-quality=75&downsize=*:350&crop=520:350;51,0&output-format=jpg",
-            "https://r1imghtlak.mmtcdn.com/1451e4a6889911eb98520242ac110003.jpg?output-quality=75&downsize=*:350&crop=520:350;51,0&output-format=jpg",
-            "https://r1imghtlak.mmtcdn.com/1451e4a6889911eb98520242ac110003.jpg?output-quality=75&downsize=*:350&crop=520:350;51,0&output-format=jpg",
-            "https://r1imghtlak.mmtcdn.com/1451e4a6889911eb98520242ac110003.jpg?output-quality=75&downsize=*:350&crop=520:350;51,0&output-format=jpg"
-        ],
-          "videos": ["https://www.youtube.com/watch?v=DVu7JIYWBV4"]
-      },
-      "reviews": [
-          {
-              "user_id": "605c72bd0419b903ba3a67e8",
-              "rating": 4,
-              "comment": "Beautiful location with a serene atmosphere.",
-              "date": "2024-10-10"
-          }
-      ],
-      "average_rating": 4.5,
-      "tags": ["Luxury", "Valley View"]
+      "videos": ["https://www.youtube.com/watch?v=DVu7JIYWBV4"]
+    },
+    "reviews": [
+      {
+        "user_id": "605c72bd0419b903ba3a67e8",
+        "rating": 4,
+        "comment": "Beautiful location with a serene atmosphere.",
+        "date": "2024-10-10"
+      }
+    ],
+    "average_rating": 4.5,
+    "tags": ["Luxury", "Valley View"]
   },
   {
-      "hotel_id": "UK001",
-      "name": "Ganga Paradise",
-      "description": "A riverside retreat with easy access to the famous Ganga Aarti.",
-      "star_rating": 4,
-      "category": "Heritage",
-      "location": {
-          "address": "55 Ganga Path",
-          "city": "Haridwar",
-          "state": "Uttarakhand",
-          "country": "India",
-          "postal_code": "249401",
-          "latitude": 29.9457,
-          "longitude": 78.1603
-      },
-      "contact": {
-          "phone": "+91-9834567890",
-          "email": "contact@gangaparadise.com",
-          "website": "https://www.gangaparadise.com"
-      },
-      "amenities": ["Free Wi-Fi", "River View", "Traditional Dining"],
-      "services": ["Daily Yoga", "Ganga Aarti View"],
-      "room_types": [
-          {
-              "type": "Heritage Suite",
-              "price_per_night": 6000,
-              "features": ["King Bed", "River View", "Complimentary Breakfast"]
-          }
+    "hotel_id": "UK001",
+    "name": "Ganga Paradise",
+    "description": "A riverside retreat with easy access to the famous Ganga Aarti.",
+    "star_rating": 4,
+    "category": "Heritage",
+    "location": {
+      "address": "55 Ganga Path",
+      "city": "Haridwar",
+      "state": "Uttarakhand",
+      "country": "India",
+      "postal_code": "249401",
+      "latitude": 29.9457,
+      "longitude": 78.1603
+    },
+    "contact": {
+      "phone": "+91-9834567890",
+      "email": "contact@gangaparadise.com",
+      "website": "https://www.gangaparadise.com"
+    },
+    "amenities": ["Free Wi-Fi", "River View", "Traditional Dining"],
+    "services": ["Daily Yoga", "Ganga Aarti View"],
+    "room_types": [
+      {
+        "type": "Heritage Suite",
+        "price_per_night": 6000,
+        "features": ["King Bed", "River View", "Complimentary Breakfast"]
+      }
+    ],
+    "policies": {
+      "check_in_time": "14:00",
+      "check_out_time": "12:00",
+      "cancellation_policy": "Free cancellation 48 hours before check-in",
+      "pet_policy": "Pets allowed",
+      "smoking_policy": "Non-smoking rooms"
+    },
+    "pricing": {
+      "base_price": 6000,
+      "discounts": [{ "description": "Extended stay discount", "amount": 500 }],
+      "availability": { "2024-11-01": 7, "2024-11-02": 6 }
+    },
+    "media": {
+      "photos": [
+        "https://r1imghtlak.mmtcdn.com/c921b5841d1111eca8560a58a9feac02.jpg?output-quality=75&downsize=*:350&crop=520:350;0,20&output-format=jpg",
+        "https://r1imghtlak.mmtcdn.com/c921b5841d1111eca8560a58a9feac02.jpg?output-quality=75&downsize=*:350&crop=520:350;0,20&output-format=jpg"
       ],
-      "policies": {
-          "check_in_time": "14:00",
-          "check_out_time": "12:00",
-          "cancellation_policy": "Free cancellation 48 hours before check-in",
-          "pet_policy": "Pets allowed",
-          "smoking_policy": "Non-smoking rooms"
-      },
-      "pricing": {
-          "base_price": 6000,
-          "discounts": [{"description": "Extended stay discount", "amount": 500}],
-          "availability": {"2024-11-01": 7, "2024-11-02": 6}
-      },
-      "media": {
-          "photos": [
-            "https://r1imghtlak.mmtcdn.com/c921b5841d1111eca8560a58a9feac02.jpg?output-quality=75&downsize=*:350&crop=520:350;0,20&output-format=jpg",
-            "https://r1imghtlak.mmtcdn.com/c921b5841d1111eca8560a58a9feac02.jpg?output-quality=75&downsize=*:350&crop=520:350;0,20&output-format=jpg"
-          ],
-          "videos": []
-      },
-      "reviews": [
-          {
-              "user_id": "605c72bd0419b903ba3a67e9",
-              "rating": 4,
-              "comment": "Perfect place for spiritual seekers!",
-              "date": "2024-10-05"
-          }
-      ],
-      "average_rating": 4.2,
-      "tags": ["Spiritual", "River View"]
+      "videos": []
+    },
+    "reviews": [
+      {
+        "user_id": "605c72bd0419b903ba3a67e9",
+        "rating": 4,
+        "comment": "Perfect place for spiritual seekers!",
+        "date": "2024-10-05"
+      }
+    ],
+    "average_rating": 4.2,
+    "tags": ["Spiritual", "River View"]
   },
   {
-      "hotel_id": "UK002",
-      "name": "Yoga Bliss",
-      "description": "Nestled in the serene Rishikesh, a perfect place for a peaceful retreat.",
-      "star_rating": 3,
-      "category": "Budget",
-      "location": {
-          "address": "88 Yoga Street",
-          "city": "Rishikesh",
-          "state": "Uttarakhand",
-          "country": "India",
-          "postal_code": "249304",
-          "latitude": 30.0850,
-          "longitude": 78.2875
-      },
-      "contact": {
-          "phone": "+91-9823456780",
-          "email": "info@yogabliss.com",
-          "website": "https://www.yogabliss.com"
-      },
-      "amenities": ["Free Wi-Fi", "Yoga Studio", "Garden"],
-      "services": ["Yoga Classes", "Guided Meditation"],
-      "room_types": [
-          {
-              "type": "Standard Room",
-              "price_per_night": 3500,
-              "features": ["Queen Bed", "Garden View", "Free Breakfast"]
-          }
+    "hotel_id": "UK002",
+    "name": "Yoga Bliss",
+    "description": "Nestled in the serene Rishikesh, a perfect place for a peaceful retreat.",
+    "star_rating": 3,
+    "category": "Budget",
+    "location": {
+      "address": "88 Yoga Street",
+      "city": "Rishikesh",
+      "state": "Uttarakhand",
+      "country": "India",
+      "postal_code": "249304",
+      "latitude": 30.085,
+      "longitude": 78.2875
+    },
+    "contact": {
+      "phone": "+91-9823456780",
+      "email": "info@yogabliss.com",
+      "website": "https://www.yogabliss.com"
+    },
+    "amenities": ["Free Wi-Fi", "Yoga Studio", "Garden"],
+    "services": ["Yoga Classes", "Guided Meditation"],
+    "room_types": [
+      {
+        "type": "Standard Room",
+        "price_per_night": 3500,
+        "features": ["Queen Bed", "Garden View", "Free Breakfast"]
+      }
+    ],
+    "policies": {
+      "check_in_time": "12:00",
+      "check_out_time": "10:00",
+      "cancellation_policy": "Free cancellation up to 24 hours before check-in",
+      "pet_policy": "No pets allowed",
+      "smoking_policy": "Non-smoking rooms"
+    },
+    "pricing": {
+      "base_price": 3500,
+      "discounts": [{ "description": "Yoga retreat discount", "amount": 500 }],
+      "availability": { "2024-11-01": 10, "2024-11-02": 10 }
+    },
+    "media": {
+      "photos": [
+        "https://images.trvl-media.com/lodging/40000000/39810000/39809200/39809126/7e5447c2.jpg?impolicy=resizecrop&rw=1200&ra=fit0",
+        "https://images.trvl-media.com/lodging/40000000/39810000/39809200/39809126/c066a6fa.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "https://images.trvl-media.com/lodging/40000000/39810000/39809200/39809126/0a0a2a3a.jpg?impolicy=resizecrop&rw=1200&ra=fit"
       ],
-      "policies": {
-          "check_in_time": "12:00",
-          "check_out_time": "10:00",
-          "cancellation_policy": "Free cancellation up to 24 hours before check-in",
-          "pet_policy": "No pets allowed",
-          "smoking_policy": "Non-smoking rooms"
-      },
-      "pricing": {
-          "base_price": 3500,
-          "discounts": [{"description": "Yoga retreat discount", "amount": 500}],
-          "availability": {"2024-11-01": 10, "2024-11-02": 10}
-      },
-      "media": {
-          "photos": ["https://images.trvl-media.com/lodging/40000000/39810000/39809200/39809126/7e5447c2.jpg?impolicy=resizecrop&rw=1200&ra=fit0",
-          "https://images.trvl-media.com/lodging/40000000/39810000/39809200/39809126/c066a6fa.jpg?impolicy=resizecrop&rw=1200&ra=fit",
-          "https://images.trvl-media.com/lodging/40000000/39810000/39809200/39809126/0a0a2a3a.jpg?impolicy=resizecrop&rw=1200&ra=fit"
-        ],
-          "videos": []
-      },
-      "reviews": [
-          {
-              "user_id": "605c72bd0419b903ba3a67ea",
-              "rating": 3,
-              "comment": "Peaceful environment and great for yoga enthusiasts.",
-              "date": "2024-10-03"
-          }
-      ],
-      "average_rating": 3.8,
-      "tags": ["Yoga", "Budget"]
+      "videos": []
+    },
+    "reviews": [
+      {
+        "user_id": "605c72bd0419b903ba3a67ea",
+        "rating": 3,
+        "comment": "Peaceful environment and great for yoga enthusiasts.",
+        "date": "2024-10-03"
+      }
+    ],
+    "average_rating": 3.8,
+    "tags": ["Yoga", "Budget"]
   },
   {
-      "hotel_id": "UK003",
-      "name": "Aloha by the Ganges",
-      "description": "A luxurious stay overlooking the Ganges, offering yoga and meditation classes.",
-      "star_rating": 5,
-      "category": "Luxury",
-      "location": {
-          "address": "20 Riverside",
-          "city": "Rishikesh",
-          "state": "Uttarakhand",
-          "country": "India",
-          "postal_code": "249304",
-          "latitude": 30.1245,
-          "longitude": 78.3101
-      },
-      "contact": {
-          "phone": "+91-9812345671",
-          "email": "info@alohabythganges.com",
-          "website": "https://www.alohabythganges.com"
-      },
-      "amenities": ["Free Wi-Fi", "River View", "Spa"],
-      "services": ["Daily Yoga", "River Rafting Booking"],
-      "room_types": [
-          {
-              "type": "Luxury Suite",
-              "price_per_night": 9000,
-              "features": ["King Bed", "River View", "Complimentary Breakfast"]
-          }
+    "hotel_id": "UK003",
+    "name": "Aloha by the Ganges",
+    "description": "A luxurious stay overlooking the Ganges, offering yoga and meditation classes.",
+    "star_rating": 5,
+    "category": "Luxury",
+    "location": {
+      "address": "20 Riverside",
+      "city": "Rishikesh",
+      "state": "Uttarakhand",
+      "country": "India",
+      "postal_code": "249304",
+      "latitude": 30.1245,
+      "longitude": 78.3101
+    },
+    "contact": {
+      "phone": "+91-9812345671",
+      "email": "info@alohabythganges.com",
+      "website": "https://www.alohabythganges.com"
+    },
+    "amenities": ["Free Wi-Fi", "River View", "Spa"],
+    "services": ["Daily Yoga", "River Rafting Booking"],
+    "room_types": [
+      {
+        "type": "Luxury Suite",
+        "price_per_night": 9000,
+        "features": ["King Bed", "River View", "Complimentary Breakfast"]
+      }
+    ],
+    "policies": {
+      "check_in_time": "13:00",
+      "check_out_time": "11:00",
+      "cancellation_policy": "Free cancellation up to 48 hours before check-in",
+      "pet_policy": "No pets allowed",
+      "smoking_policy": "Non-smoking rooms"
+    },
+    "pricing": {
+      "base_price": 9000,
+      "discounts": [{ "description": "Long-stay discount", "amount": 1000 }],
+      "availability": { "2024-11-01": 5, "2024-11-02": 5 }
+    },
+    "media": {
+      "photos": [
+        "https://lh3.googleusercontent.com/p/AF1QipMFTCSyKMI5EoQVHJCZAJf0jYwGPGBC8T9O7yYL=s1360-w1360-h1020",
+        "https://lh3.googleusercontent.com/proxy/ZYRKqJJbbFEJSkpzy5h7L2fvd3idHVIkQGeD3BSC3SfmTSeXKMMNBl_01ZtPZbNayjra_1CzsHPWY2wip7iGJzdZyFq4HXKpAYEDZqphr28w4nplHpQWPSDK9D125Vgj4R1ikU6L9uS77WX9L0rIgaHDXtPjOw=s1360-w1360-h1020"
       ],
-      "policies": {
-          "check_in_time": "13:00",
-          "check_out_time": "11:00",
-          "cancellation_policy": "Free cancellation up to 48 hours before check-in",
-          "pet_policy": "No pets allowed",
-          "smoking_policy": "Non-smoking rooms"
-      },
-      "pricing": {
-          "base_price": 9000,
-          "discounts": [{"description": "Long-stay discount", "amount": 1000}],
-          "availability": {"2024-11-01": 5, "2024-11-02": 5}
-      },
-      "media": {
-          "photos": ["https://lh3.googleusercontent.com/p/AF1QipMFTCSyKMI5EoQVHJCZAJf0jYwGPGBC8T9O7yYL=s1360-w1360-h1020",
-          "https://lh3.googleusercontent.com/proxy/ZYRKqJJbbFEJSkpzy5h7L2fvd3idHVIkQGeD3BSC3SfmTSeXKMMNBl_01ZtPZbNayjra_1CzsHPWY2wip7iGJzdZyFq4HXKpAYEDZqphr28w4nplHpQWPSDK9D125Vgj4R1ikU6L9uS77WX9L0rIgaHDXtPjOw=s1360-w1360-h1020"
-        ],
-          "videos": []
-      },
-      "reviews": [
-          {
-              "user_id": "605c72bd0419b903ba3a67eb",
-              "rating": 5,
-              "comment": "Luxurious stay with peaceful surroundings.",
-              "date": "2024-10-08"
-          }
+      "videos": []
+    },
+    "reviews": [
+      {
+        "user_id": "605c72bd0419b903ba3a67eb",
+        "rating": 5,
+        "comment": "Luxurious stay with peaceful surroundings.",
+        "date": "2024-10-08"
+      }
+    ],
+    "average_rating": 4.9,
+    "tags": ["Luxury", "River View"]
+  },
+  {
+    "hotel_id": "AG001",
+    "name": "ITC Mughal",
+    "description": "A luxurious hotel inspired by Mughal architecture, offering opulent accommodations and rich heritage experiences.",
+    "star_rating": 5,
+    "category": "Luxury",
+    "location": {
+      "address": "Taj Ganj",
+      "city": "Agra",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "postal_code": "282001",
+      "latitude": 27.1616,
+      "longitude": 78.041
+    },
+    "contact": {
+      "phone": "+91-5624021700",
+      "email": "info@itcmughal.com",
+      "website": "https://www.itchotels.com/in/en/itcmughal-agra.html"
+    },
+    "amenities": [
+      "Free Wi-Fi",
+      "Spa",
+      "Outdoor Pool",
+      "Fitness Center",
+      "Business Center"
+    ],
+    "services": ["Room Service", "City Tours", "Luxury Spa Treatments"],
+    "room_types": [
+      {
+        "type": "Royal Mughal Suite",
+        "price_per_night": 15000,
+        "features": [
+          "King Bed",
+          "Garden View",
+          "Jacuzzi",
+          "Complimentary Breakfast"
+        ]
+      }
+    ],
+    "policies": {
+      "check_in_time": "14:00",
+      "check_out_time": "12:00",
+      "cancellation_policy": "Free cancellation up to 24 hours before check-in",
+      "pet_policy": "No pets allowed",
+      "smoking_policy": "Non-smoking rooms"
+    },
+    "pricing": {
+      "base_price": 15000,
+      "discounts": [{ "description": "Last-minute discount", "amount": 1000 }],
+      "availability": { "2024-11-01": 5, "2024-11-02": 7 }
+    },
+    "media": {
+      "photos": [
+        "https://example.com/itc-mughal-agra/photo1.jpg",
+        "https://example.com/itc-mughal-agra/photo2.jpg",
+        "https://example.com/itc-mughal-agra/photo3.jpg"
       ],
-      "average_rating": 4.9,
-      "tags": ["Luxury", "River View"]
+      "videos": ["https://www.youtube.com/watch?v=EXAMPLE_ITC_MUGHAL"]
+    },
+    "reviews": [
+      {
+        "user_id": "605c72bd0419b903ba3a67e8",
+        "rating": 5,
+        "comment": "Amazing Mughal-inspired architecture and luxurious stay.",
+        "date": "2024-10-12"
+      }
+    ],
+    "average_rating": 4.8,
+    "tags": ["Luxury", "Mughal Architecture", "Spa"]
+  },
+  {
+    "hotel_id": "AG002",
+    "name": "The Oberoi Amarvilas",
+    "description": "An opulent retreat with views of the Taj Mahal, featuring world-class amenities and impeccable service.",
+    "star_rating": 5,
+    "category": "Luxury",
+    "location": {
+      "address": "Taj East Gate Road",
+      "city": "Agra",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "postal_code": "282001",
+      "latitude": 27.1703,
+      "longitude": 78.0421
+    },
+    "contact": {
+      "phone": "+91-5622231515",
+      "email": "reservations@oberoigroup.com",
+      "website": "https://www.oberoihotels.com/hotels-in-agra-amarvilas"
+    },
+    "amenities": [
+      "Free Wi-Fi",
+      "Taj Mahal View",
+      "Outdoor Pool",
+      "Spa",
+      "Fine Dining"
+    ],
+    "services": ["Private Dining", "City Tours", "Luxury Spa Treatments"],
+    "room_types": [
+      {
+        "type": "Premier Room with Taj View",
+        "price_per_night": 22000,
+        "features": [
+          "King Bed",
+          "Taj Mahal View",
+          "Balcony",
+          "Complimentary Breakfast"
+        ]
+      }
+    ],
+    "policies": {
+      "check_in_time": "14:00",
+      "check_out_time": "12:00",
+      "cancellation_policy": "Free cancellation up to 48 hours before check-in",
+      "pet_policy": "No pets allowed",
+      "smoking_policy": "Non-smoking rooms"
+    },
+    "pricing": {
+      "base_price": 22000,
+      "discounts": [
+        { "description": "Early booking discount", "amount": 2000 }
+      ],
+      "availability": { "2024-11-01": 4, "2024-11-02": 6 }
+    },
+    "media": {
+      "photos": [
+        "https://example.com/oberoi-amarvilas-agra/photo1.jpg",
+        "https://example.com/oberoi-amarvilas-agra/photo2.jpg",
+        "https://example.com/oberoi-amarvilas-agra/photo3.jpg"
+      ],
+      "videos": ["https://www.youtube.com/watch?v=EXAMPLE_OBEROI_AMARVILAS"]
+    },
+    "reviews": [
+      {
+        "user_id": "605c72bd0419b903ba3a67f0",
+        "rating": 5,
+        "comment": "Unparalleled views of the Taj Mahal, truly a luxurious experience.",
+        "date": "2024-10-11"
+      }
+    ],
+    "average_rating": 4.9,
+    "tags": ["Luxury", "Taj Mahal View", "Fine Dining"]
   }
 ]
