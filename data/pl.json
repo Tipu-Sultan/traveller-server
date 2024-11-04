@@ -1,0 +1,578 @@
+[
+  {
+    "placeId": "GOA123",
+    "name": "Goa Beach Paradise",
+    "locations": {
+      "village": "",
+      "city": "Goa",
+      "state": "Goa",
+      "country": "India",
+      "coordinates": {
+        "latitude": 15.2993,
+        "longitude": 74.124
+      }
+    },
+    "category": "Beach",
+    "itinerary": [
+      {
+        "day": 1,
+        "activities": [
+          "Visit Baga Beach",
+          "Water sports at Calangute",
+          "Dinner at beachside shack"
+        ],
+        "highlights": "Beaches, water sports"
+      },
+      {
+        "day": 2,
+        "activities": [
+          "Visit Basilica of Bom Jesus",
+          "Explore Fontainhas",
+          "Shopping at Anjuna Flea Market"
+        ],
+        "highlights": "Cultural sites, shopping"
+      }
+    ],
+    "amenities": ["WiFi", "Pool", "Free Parking", "Beach Access"],
+    "hotels": [
+      {
+        "name": "The Grand Hyatt Goa",
+        "address": "Bambolim, Goa",
+        "rating": 4.5,
+        "pricePerNight": 200
+      }
+    ],
+    "foods": [
+      {
+        "cuisine": "Goan Seafood",
+        "recommendedRestaurants": ["Mum’s Kitchen", "Vinayak Family Restaurant"]
+      }
+    ],
+    "packagePricing": {
+      "basePrice": 500,
+      "additionalFees": 50,
+      "discount": 10,
+      "finalPrice": 540
+    },
+    "visitSites": [
+      {
+        "name": "Baga Beach",
+        "description": "Popular beach with vibrant nightlife",
+        "distanceFromHotel": 8
+      }
+    ],
+    "onsiteActivities": ["Water Sports", "Beach Parties", "Shopping"],
+    "transportOptions": {
+      "toLocation": "Flight",
+      "withinLocation": ["Scooter Rental", "Taxi"]
+    },
+    "ratings": {
+      "overall": 4.8,
+      "categories": {
+        "cleanliness": 4.6,
+        "service": 4.7,
+        "location": 4.9,
+        "valueForMoney": 4.5
+      }
+    },
+    "reviews": [
+      {
+        "userId": "user123",
+        "username": "Traveler_A",
+        "reviewText": "Amazing beaches and vibrant nightlife!",
+        "rating": 5,
+        "date": "2024-10-15"
+      }
+    ],
+    "description": {
+      "short": "A tropical paradise with sun, sand, and surf.",
+      "detailed": "Goa is known for its pristine beaches, lively nightlife, and historical landmarks. Enjoy a mix of adventure and relaxation."
+    },
+    "media": {
+      "photos": ["url-to-photo1", "url-to-photo2"],
+      "videos": ["url-to-video1"]
+    },
+    "nearbyHotels": [
+      {
+        "name": "Taj Exotica",
+        "distance": 10,
+        "pricePerNight": 250,
+        "rating": 4.7
+      }
+    ],
+    "duration": {
+      "days": 3,
+      "nights": 2
+    },
+    "recommendedAgeGroup": "All Ages",
+    "bestTimeToVisit": {
+      "season": "Winter",
+      "months": ["November", "December", "January", "February"]
+    },
+    "cancellationPolicy": {
+      "refundPercentage": 75,
+      "deadlineInDays": 7
+    },
+    "availableDiscounts": "Seasonal",
+    "tags": ["Beach", "Party", "Adventure"],
+    "createdAt": "2024-10-01",
+    "updatedAt": "2024-10-01"
+  },
+  {
+    "placeId": "JPR456",
+    "name": "Jaipur Royal Heritage",
+    "locations": {
+      "village": "",
+      "city": "Jaipur",
+      "state": "Rajasthan",
+      "country": "India",
+      "coordinates": {
+        "latitude": 26.9124,
+        "longitude": 75.7873
+      }
+    },
+    "category": "Historical",
+    "itinerary": [
+      {
+        "day": 1,
+        "activities": [
+          "Visit Amer Fort",
+          "Explore Hawa Mahal",
+          "Dinner at Chokhi Dhani"
+        ],
+        "highlights": "Historical sites, local cuisine"
+      },
+      {
+        "day": 2,
+        "activities": ["City Palace Tour", "Shopping at Johari Bazaar"],
+        "highlights": "Royal heritage, shopping"
+      }
+    ],
+    "amenities": ["Guided Tours", "Local Cuisine", "Cultural Performances"],
+    "hotels": [
+      {
+        "name": "Rambagh Palace",
+        "address": "Bhawani Singh Road, Jaipur",
+        "rating": 4.8,
+        "pricePerNight": 300
+      }
+    ],
+    "foods": [
+      {
+        "cuisine": "Rajasthani Thali",
+        "recommendedRestaurants": ["Laxmi Misthan Bhandar", "Chokhi Dhani"]
+      }
+    ],
+    "packagePricing": {
+      "basePrice": 700,
+      "additionalFees": 70,
+      "discount": 50,
+      "finalPrice": 720
+    },
+    "visitSites": [
+      {
+        "name": "Amer Fort",
+        "description": "A stunning fort with architectural brilliance",
+        "distanceFromHotel": 11
+      }
+    ],
+    "onsiteActivities": ["Elephant Ride", "Folk Dance"],
+    "transportOptions": {
+      "toLocation": "Train",
+      "withinLocation": ["Auto Rickshaw", "Taxi"]
+    },
+    "ratings": {
+      "overall": 4.9,
+      "categories": {
+        "cleanliness": 4.8,
+        "service": 4.9,
+        "location": 4.9,
+        "valueForMoney": 4.7
+      }
+    },
+    "reviews": [
+      {
+        "userId": "user789",
+        "username": "CultureLover",
+        "reviewText": "A fantastic experience with a rich cultural immersion!",
+        "rating": 5,
+        "date": "2024-09-18"
+      }
+    ],
+    "description": {
+      "short": "Discover the royal heritage of Jaipur.",
+      "detailed": "Jaipur, known as the Pink City, is famous for its grand palaces, forts, and vibrant culture. A must-visit for history enthusiasts."
+    },
+    "media": {
+      "photos": ["url-to-photo3", "url-to-photo4"],
+      "videos": ["url-to-video2"]
+    },
+    "nearbyHotels": [
+      {
+        "name": "Fairmont Jaipur",
+        "distance": 8,
+        "pricePerNight": 220,
+        "rating": 4.6
+      }
+    ],
+    "duration": {
+      "days": 3,
+      "nights": 2
+    },
+    "recommendedAgeGroup": "All Ages",
+    "bestTimeToVisit": {
+      "season": "Winter",
+      "months": ["October", "November", "December", "January", "February"]
+    },
+    "cancellationPolicy": {
+      "refundPercentage": 80,
+      "deadlineInDays": 10
+    },
+    "availableDiscounts": "Group",
+    "tags": ["Heritage", "Palace", "Culture"],
+    "createdAt": "2024-09-01",
+    "updatedAt": "2024-09-01"
+  },
+  {
+    "placeId": "SHM789",
+    "name": "Shimla Hills Retreat",
+    "locations": {
+      "village": "Chail",
+      "city": "Shimla",
+      "state": "Himachal Pradesh",
+      "country": "India",
+      "coordinates": {
+        "latitude": 31.1048,
+        "longitude": 77.1734
+      }
+    },
+    "category": "Hill Station",
+    "itinerary": [
+      {
+        "day": 1,
+        "activities": [
+          "Visit Mall Road",
+          "Scandal Point",
+          "Shopping at Lakkar Bazaar"
+        ],
+        "highlights": "Shopping, scenic views"
+      },
+      {
+        "day": 2,
+        "activities": [
+          "Excursion to Kufri",
+          "Visit Jakhu Temple",
+          "Enjoy a mountain safari"
+        ],
+        "highlights": "Adventure, temples"
+      }
+    ],
+    "amenities": ["Heated Rooms", "Guided Tours", "Mountain Views"],
+    "hotels": [
+      {
+        "name": "Wildflower Hall",
+        "address": "Charabra, Shimla",
+        "rating": 4.7,
+        "pricePerNight": 180
+      }
+    ],
+    "foods": [
+      {
+        "cuisine": "Himachali Cuisine",
+        "recommendedRestaurants": ["The Oberoi", "Cafe Simla Times"]
+      }
+    ],
+    "packagePricing": {
+      "basePrice": 400,
+      "additionalFees": 30,
+      "discount": 20,
+      "finalPrice": 410
+    },
+    "visitSites": [
+      {
+        "name": "Mall Road",
+        "description": "Famous shopping area with scenic views",
+        "distanceFromHotel": 5
+      }
+    ],
+    "onsiteActivities": ["Hiking", "Shopping", "Local Sightseeing"],
+    "transportOptions": {
+      "toLocation": "Train",
+      "withinLocation": ["Cab", "Local Bus"]
+    },
+    "ratings": {
+      "overall": 4.7,
+      "categories": {
+        "cleanliness": 4.6,
+        "service": 4.7,
+        "location": 4.8,
+        "valueForMoney": 4.5
+      }
+    },
+    "reviews": [
+      {
+        "userId": "user456",
+        "username": "NatureLover",
+        "reviewText": "Beautiful hill station with serene views and amazing food!",
+        "rating": 5,
+        "date": "2024-09-25"
+      }
+    ],
+    "description": {
+      "short": "A serene hill station with breathtaking mountain views.",
+      "detailed": "Shimla offers a peaceful escape from city life with its cool climate, charming streets, and scenic beauty."
+    },
+    "media": {
+      "photos": ["url-to-photo5", "url-to-photo6"],
+      "videos": ["url-to-video3"]
+    },
+    "nearbyHotels": [
+      {
+        "name": "Clarkes Hotel",
+        "distance": 6,
+        "pricePerNight": 150,
+        "rating": 4.5
+      }
+    ],
+    "duration": {
+      "days": 3,
+      "nights": 2
+    },
+    "recommendedAgeGroup": "All Ages",
+    "bestTimeToVisit": {
+      "season": "Summer",
+      "months": ["April", "May", "June", "July"]
+    },
+    "cancellationPolicy": {
+      "refundPercentage": 80,
+      "deadlineInDays": 7
+    },
+    "availableDiscounts": "Early Booking",
+    "tags": ["Nature", "Mountain", "Relaxation"],
+    "createdAt": "2024-10-03",
+    "updatedAt": "2024-10-03"
+  },
+  {
+    "placeId": "SRN901",
+    "name": "Srinagar Valley Escape",
+    "locations": {
+      "village": "",
+      "city": "Srinagar",
+      "state": "Jammu and Kashmir",
+      "country": "India",
+      "coordinates": {
+        "latitude": 34.0837,
+        "longitude": 74.7973
+      }
+    },
+    "category": "Nature & Adventure",
+    "itinerary": [
+      {
+        "day": 1,
+        "activities": ["Houseboat stay on Dal Lake", "Shikara ride"],
+        "highlights": "Houseboat, Shikara ride"
+      },
+      {
+        "day": 2,
+        "activities": ["Explore Mughal Gardens", "Visit Hazratbal Shrine"],
+        "highlights": "Gardens, heritage"
+      }
+    ],
+    "amenities": ["Houseboat Accommodation", "Guided Tours", "Photography Spots"],
+    "hotels": [
+      {
+        "name": "Vivanta Dal View",
+        "address": "Kralsangri, Srinagar",
+        "rating": 4.6,
+        "pricePerNight": 220
+      }
+    ],
+    "foods": [
+      {
+        "cuisine": "Kashmiri Cuisine",
+        "recommendedRestaurants": ["Ahdoos Restaurant", "Mughal Darbar"]
+      }
+    ],
+    "packagePricing": {
+      "basePrice": 600,
+      "additionalFees": 50,
+      "discount": 30,
+      "finalPrice": 620
+    },
+    "visitSites": [
+      {
+        "name": "Dal Lake",
+        "description": "Famous for houseboats and Shikara rides",
+        "distanceFromHotel": 2
+      }
+    ],
+    "onsiteActivities": ["Shikara Rides", "Shopping", "Photography"],
+    "transportOptions": {
+      "toLocation": "Flight",
+      "withinLocation": ["Shikara", "Taxi"]
+    },
+    "ratings": {
+      "overall": 4.9,
+      "categories": {
+        "cleanliness": 4.8,
+        "service": 4.9,
+        "location": 4.9,
+        "valueForMoney": 4.7
+      }
+    },
+    "reviews": [
+      {
+        "userId": "user111",
+        "username": "Explorer",
+        "reviewText": "The houseboat stay was magical, and the scenery is unmatched.",
+        "rating": 5,
+        "date": "2024-10-12"
+      }
+    ],
+    "description": {
+      "short": "A serene escape to the beautiful valleys of Srinagar.",
+      "detailed": "Srinagar offers a unique blend of natural beauty, heritage, and hospitality, known for its stunning lakes and gardens."
+    },
+    "media": {
+      "photos": ["url-to-photo7", "url-to-photo8"],
+      "videos": ["url-to-video4"]
+    },
+    "nearbyHotels": [
+      {
+        "name": "The Lalit Grand Palace",
+        "distance": 3,
+        "pricePerNight": 250,
+        "rating": 4.8
+      }
+    ],
+    "duration": {
+      "days": 4,
+      "nights": 3
+    },
+    "recommendedAgeGroup": "All Ages",
+    "bestTimeToVisit": {
+      "season": "Spring",
+      "months": ["March", "April", "May"]
+    },
+    "cancellationPolicy": {
+      "refundPercentage": 85,
+      "deadlineInDays": 5
+    },
+    "availableDiscounts": "Family",
+    "tags": ["Lakes", "Culture", "Scenic"],
+    "createdAt": "2024-10-10",
+    "updatedAt": "2024-10-10"
+  },
+  {
+    "placeId": "LLD456",
+    "name": "Leh-Ladakh Adventure Expedition",
+    "locations": {
+      "village": "Leh",
+      "city": "Leh",
+      "state": "Ladakh",
+      "country": "India",
+      "coordinates": {
+        "latitude": 34.1526,
+        "longitude": 77.5771
+      }
+    },
+    "category": "Adventure",
+    "itinerary": [
+      {
+        "day": 1,
+        "activities": ["Acclimatization in Leh", "Local Market Visit"],
+        "highlights": "Acclimatization, Local Market"
+      },
+      {
+        "day": 2,
+        "activities": ["Drive to Nubra Valley", "Camel Ride in Hunder"],
+        "highlights": "Nubra Valley, Camel Ride"
+      }
+    ],
+    "amenities": ["Heated Tents", "Guided Treks", "Medical Support"],
+    "hotels": [
+      {
+        "name": "The Grand Dragon",
+        "address": "Old Road, Leh",
+        "rating": 4.7,
+        "pricePerNight": 250
+      }
+    ],
+    "foods": [
+      {
+        "cuisine": "Ladakhi",
+        "recommendedRestaurants": ["Gesmo Restaurant", "Bon Appetit"]
+      }
+    ],
+    "packagePricing": {
+      "basePrice": 800,
+      "additionalFees": 70,
+      "discount": 50,
+      "finalPrice": 820
+    },
+    "visitSites": [
+      {
+        "name": "Pangong Lake",
+        "description": "Beautiful lake with changing colors",
+        "distanceFromHotel": 120
+      }
+    ],
+    "onsiteActivities": ["Camel Riding", "Trekking", "Photography"],
+    "transportOptions": {
+      "toLocation": "Flight",
+      "withinLocation": ["Bike", "Taxi"]
+    },
+    "ratings": {
+      "overall": 4.8,
+      "categories": {
+        "cleanliness": 4.7,
+        "service": 4.8,
+        "location": 4.9,
+        "valueForMoney": 4.7
+      }
+    },
+    "reviews": [
+      {
+        "userId": "user789",
+        "username": "ThrillSeeker",
+        "reviewText": "An experience of a lifetime with stunning landscapes!",
+        "rating": 5,
+        "date": "2024-09-22"
+      }
+    ],
+    "description": {
+      "short": "An adventurous trip to the mesmerizing Leh and Ladakh.",
+      "detailed": "Ladakh is a dream destination for adventure enthusiasts, offering high-altitude passes, stunning valleys, and unique landscapes."
+    },
+    "media": {
+      "photos": ["url-to-photo9", "url-to-photo10"],
+      "videos": ["url-to-video5"]
+    },
+    "nearbyHotels": [
+      {
+        "name": "Hotel Ladakh Residency",
+        "distance": 2,
+        "pricePerNight": 200,
+        "rating": 4.6
+      }
+    ],
+    "duration": {
+      "days": 5,
+      "nights": 4
+    },
+    "recommendedAgeGroup": "18-50",
+    "bestTimeToVisit": {
+      "season": "Summer",
+      "months": ["May", "June", "July", "August"]
+    },
+    "cancellationPolicy": {
+      "refundPercentage": 75,
+      "deadlineInDays": 10
+    },
+    "availableDiscounts": "Group",
+    "tags": ["Adventure", "High-Altitude", "Culture"],
+    "createdAt": "2024-10-05",
+    "updatedAt": "2024-10-05"
+  }
+    
+]

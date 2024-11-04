@@ -38,7 +38,29 @@ const PlaceSchema = new mongoose.Schema({
     }
   ],
   average_rating: { type: Number, default: 0 },
-  tags: [{ type: String }]
+  tags: [{ type: String }],
+  package_price: { type: Number },
+  duration: {
+    days: { type: Number },
+    nights: { type: Number }
+  },
+  additional_amenities: [{ type: String }],
+  site_visits: [{
+    location: { type: String },
+    duration: { type: String }
+  }],
+  affordability: { type: String },
+  local_cuisine: [{ type: String }],
+  safety_tips: [{ type: String }],
+  travel_restrictions: [{ type: String }],
+  local_attractions: [{
+    name: { type: String },
+    description: { type: String },
+    distance: { type: String }
+  }],
+  created_at: { type: Date, default: Date.now },
+  updated_at: { type: Date, default: Date.now }
 });
 
+// Export the model
 module.exports = mongoose.model('Place', PlaceSchema);

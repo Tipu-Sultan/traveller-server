@@ -54,6 +54,28 @@ const getSearchPlaces = async (req, res) => {
   }
 };
 
+const getSuggestions = async (req, res) => {
+  const { query } = req.query;
+
+  if (!query) {
+    return res.status(400).json({ error: 'Query parameter is required' });
+  }
+
+  try {
+    // Use a regex to search by the name field, case-insensitive
+    const regex = new RegExp(query, 'i');
+    const suggestions = await Place.find({ name: regex })
+      .limit(10) // Limit the number of results
+      .select('name -_id'); // Only retrieve the 'name' field, exclude '_id'
+
+    res.json(suggestions.map((place) => place.name)); // Return an array of names
+  } catch (error) {
+    console.error('Error fetching suggestions:', error);
+    res.status(500).json({ error: 'An error occurred while fetching suggestions' });
+  }
+};
+
+
 const getPlaceById = async (req, res) => {
   const { placeId } = req.params; // Extract placeId from request parameters
 
@@ -174,5 +196,6 @@ module.exports = {
   getPlaceById,
   getHotelById,
   getRentalById,
-  fetchFeaturedPlaces
+  fetchFeaturedPlaces,
+  getSuggestions
 };

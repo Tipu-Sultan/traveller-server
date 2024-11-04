@@ -1,9 +1,10 @@
 // routes/placeRoutes.js
 const express = require('express');
-const { getSearchPlaces, getPlaceWithNearbyServices, getPlaceById, getHotelById, getRentalById, fetchFeaturedPlaces } = require('../controllers/placeController');
+const { getSearchPlaces, getPlaceWithNearbyServices, getPlaceById, getHotelById, getRentalById, fetchFeaturedPlaces, getSuggestions } = require('../controllers/placeController');
 const router = express.Router();
 
 router.get('/search', getSearchPlaces);
+router.get('/suggestions', getSuggestions);
 router.get('/:placeId', getPlaceById);
 router.get('/hotel/:hotelId', getHotelById);
 router.get('/bike-rental/:rentalId', getRentalById);
