@@ -1,4 +1,4 @@
-const Place = require('../models/PlaceModel'); 
+const Package = require('../models/packageModel'); 
 const Hotel = require('../models/HotelsModel'); // Hotel model
 const BikeRental = require('../models/BikeRentalModel'); // BikeRental model
 const PetrolStation = require('../models/PetrolStationModel'); // PetrolStation model
@@ -20,32 +20,32 @@ const getSearchPlaces = async (req, res) => {
     const skip = (pageNumber - 1) * limitNumber;
 
     // Search for places matching the query in name or state (case insensitive)
-    const places = await Place.find({
+    const packages = await Package.find({
       $or: [
         { name: { $regex: query, $options: 'i' } }, 
-        { 'location.state': { $regex: query, $options: 'i' } } 
+        { 'locations.state': { $regex: query, $options: 'i' } } 
       ]
     }).skip(skip).limit(limitNumber);
 
     // Check if places were found
-    if (places.length === 0) {
-      return res.status(404).json({ error: 'No places found matching the search criteria' });
+    if (packages.length === 0) {
+      return res.status(404).json({ error: 'No Packages found matching the search criteria' });
     }
 
     // Get the total number of places to calculate total pages
-    const totalPlaces = await Place.countDocuments({
+    const totalPackages = await Place.countDocuments({
       $or: [
         { name: { $regex: query, $options: 'i' } }, 
-        { 'location.state': { $regex: query, $options: 'i' } }
+        { 'locations.state': { $regex: query, $options: 'i' } }
       ]
     });
 
     // Calculate total pages
-    const totalPages = Math.ceil(totalPlaces / limitNumber);
+    const totalPages = Math.ceil(totalPackages / limitNumber);
 
     // Send the found places along with pagination details
     res.status(200).json({
-      places,
+      packages,
       totalPages,
       currentPage: pageNumber,
     });
@@ -64,11 +64,11 @@ const getSuggestions = async (req, res) => {
   try {
     // Use a regex to search by the name field, case-insensitive
     const regex = new RegExp(query, 'i');
-    const suggestions = await Place.find({ name: regex })
+    const suggestions = await Package.find({ name: regex })
       .limit(10) // Limit the number of results
       .select('name -_id'); // Only retrieve the 'name' field, exclude '_id'
 
-    res.json(suggestions.map((place) => place.name)); // Return an array of names
+    res.json(suggestions.map((package) => package.name)); // Return an array of names
   } catch (error) {
     console.error('Error fetching suggestions:', error);
     res.status(500).json({ error: 'An error occurred while fetching suggestions' });
@@ -77,16 +77,16 @@ const getSuggestions = async (req, res) => {
 
 
 const getPlaceById = async (req, res) => {
-  const { placeId } = req.params; // Extract placeId from request parameters
+  const { packageId } = req.params; 
 
   try {
-      const place = await Place.findOne({ place_id: placeId }); // Find place by place_id
+      const package = await Package.findOne({ packageId: packageId }); 
 
-      if (!place) {
-          return res.status(404).json({ error: "Place not found" }); // Return 404 if place not found
+      if (!package) {
+          return res.status(404).json({ error: "Package not found" }); 
       }
 
-      res.status(200).json(place); // Return place data if found
+      res.status(200).json(package); 
   } catch (error) {
       console.error("Error fetching place by ID:", error);
       res.status(500).json({ error: "Server error" }); // Return server error if any
@@ -130,26 +130,26 @@ const getRentalById = async (req, res) => {
 // Controller to fetch place data with nearby hotels, bike rentals, and petrol stations
 const getPlaceWithNearbyServices = async (req, res) => {
   try {
-      const { placeId, placeName, city } = req.query;
+      const { packageId, placeName, city } = req.query;
       // 1. Find place based on placeId, name, or city
       let placeQuery = {};
-      if (placeId) {
-          placeQuery.place_id = placeId; // Use place_id instead of _id
+      if (packageId) {
+          placeQuery.packageId = packageId; // Use place_id instead of _id
       } else if (placeName) {
           placeQuery.name = placeName;
       } else if (city) {
-          placeQuery["location.city"] = city;
+          placeQuery["locations.city"] = city;
       }
 
-      const place = await Place.findOne(placeQuery);
+      const package = await Package.findOne(placeQuery);
 
-      if (!place) {
+      if (!package) {
           return res.status(404).json({ message: "Place not foundmmm" });
       }
 
       // 2. Search for hotels and bike rentals in the same city as the place
-      const hotelsPromise = Hotel.find({ "location.city": place.location.city });
-      const bikeRentalsPromise = BikeRental.find({ "locationName": place.location.city });
+      const hotelsPromise = Hotel.find({ "location.city": package.locations.city });
+      const bikeRentalsPromise = BikeRental.find({ "locationName": package.locations.city });
 
       const [hotels, bikeRentals] = await Promise.all([
           hotelsPromise,
@@ -158,7 +158,7 @@ const getPlaceWithNearbyServices = async (req, res) => {
 
       // 3. Combine results and respond
       const response = {
-          place,
+          package,
           nearbyHotels: hotels,
           nearbyBikeRentals: bikeRentals,
       };
@@ -173,21 +173,21 @@ const getPlaceWithNearbyServices = async (req, res) => {
 // Fetch Featured Places based on Season
 const fetchFeaturedPlaces = async (req, res) => {
   try {
-    // Fetch only places with an average rating greater than 4.7
-    const places = await Place.find({ average_rating: { $gt: 4.8 } });
+    const packages = await Package.find({ 'ratings.overall': { $gt: 4.3 } });
 
     // Check if places were found
-    if (!places || places.length === 0) {
-      return res.status(404).json({ message: 'No places found with rating above 4.7.' });
+    if (!packages || packages.length === 0) {
+      return res.status(404).json({ message: 'No places found with rating above 4.3.' });
     }
 
     // Respond with the fetched places
-    res.status(200).json(places);
+    res.status(200).json(packages);
   } catch (error) {
     console.error("Error fetching featured places:", error);
     res.status(500).json({ error: 'Error fetching featured places' });
   }
 };
+
 
 
 module.exports = {

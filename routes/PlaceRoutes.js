@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get('/search', getSearchPlaces);
 router.get('/suggestions', getSuggestions);
-router.get('/:placeId', getPlaceById);
+router.get('/:packageId', getPlaceById);
 router.get('/hotel/:hotelId', getHotelById);
 router.get('/bike-rental/:rentalId', getRentalById);
 router.get('/place/services', getPlaceWithNearbyServices);

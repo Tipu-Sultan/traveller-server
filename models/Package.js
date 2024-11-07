@@ -134,6 +134,5 @@ const placeSchema = new mongoose.Schema({
   // Indexes for better performance on search queries
   placeSchema.index({ name: 'text', 'locations.city': 'text', 'locations.state': 'text', tags: 'text' });
   
-  const Place = mongoose.model('Place', placeSchema);
-  module.exports = Place;
+module.exports = mongoose.model('Place', PlaceSchema);
   

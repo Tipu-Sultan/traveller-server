@@ -9,7 +9,7 @@ const userSchema = new mongoose.Schema({
   contact: { type: String}, // User's contact number
   isVerified: { type: Boolean, default: false }, // Verification status
   recentVisits: [{ 
-    placeId: { type: mongoose.Schema.Types.ObjectId, ref: 'Place' }, 
+    packageId: { type: mongoose.Schema.Types.ObjectId, ref: 'Place' }, 
     visitedAt: { type: Date, default: Date.now } 
   }],
   totalExpense: { type: Number, default: 0 }, // Total expenses of the user
