@@ -1,8 +1,6 @@
 const Package = require('../models/packageModel'); 
 const Hotel = require('../models/HotelsModel'); // Hotel model
 const BikeRental = require('../models/BikeRentalModel'); // BikeRental model
-const PetrolStation = require('../models/PetrolStationModel'); // PetrolStation model
-const { getSeason } = require('../helper/SeasonCount');
 // Controller to search places by name or state
 const getSearchPlaces = async (req, res) => {
   const { query, page = 1, limit } = req.query; // Default to page 1 and limit 10
@@ -33,7 +31,7 @@ const getSearchPlaces = async (req, res) => {
     }
 
     // Get the total number of places to calculate total pages
-    const totalPackages = await Place.countDocuments({
+    const totalPackages = await Package.countDocuments({
       $or: [
         { name: { $regex: query, $options: 'i' } }, 
         { 'locations.state': { $regex: query, $options: 'i' } }
@@ -130,26 +128,18 @@ const getRentalById = async (req, res) => {
 // Controller to fetch place data with nearby hotels, bike rentals, and petrol stations
 const getPlaceWithNearbyServices = async (req, res) => {
   try {
-      const { packageId, placeName, city } = req.query;
+      const { packageId, city } = req.query;
       // 1. Find place based on placeId, name, or city
       let placeQuery = {};
       if (packageId) {
           placeQuery.packageId = packageId; // Use place_id instead of _id
-      } else if (placeName) {
-          placeQuery.name = placeName;
       } else if (city) {
           placeQuery["locations.city"] = city;
       }
 
-      const package = await Package.findOne(placeQuery);
-
-      if (!package) {
-          return res.status(404).json({ message: "Place not foundmmm" });
-      }
-
       // 2. Search for hotels and bike rentals in the same city as the place
-      const hotelsPromise = Hotel.find({ "location.city": package.locations.city });
-      const bikeRentalsPromise = BikeRental.find({ "locationName": package.locations.city });
+      const hotelsPromise = Hotel.find({ "location.city": city });
+      const bikeRentalsPromise = BikeRental.find({ "locationName": city });
 
       const [hotels, bikeRentals] = await Promise.all([
           hotelsPromise,
@@ -158,7 +148,6 @@ const getPlaceWithNearbyServices = async (req, res) => {
 
       // 3. Combine results and respond
       const response = {
-          package,
           nearbyHotels: hotels,
           nearbyBikeRentals: bikeRentals,
       };

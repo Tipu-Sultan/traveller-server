@@ -33,11 +33,9 @@ const bookingSchema = new mongoose.Schema({
   numberOfRooms: {
     type: Number,
     required: true,
-    min: 1,
   },
   hotelName: {
     type: String,
-    required: true,
   },
   totalCost: {
     type: Number,
@@ -47,7 +45,6 @@ const bookingSchema = new mongoose.Schema({
     type: String,
     enum: ['flight', 'on your own', 'none'],
     default: 'none',
-    required: true,
   },
   paymentStatus: {
     type: String,

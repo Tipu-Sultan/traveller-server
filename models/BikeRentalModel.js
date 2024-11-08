@@ -4,8 +4,13 @@ const mongoose = require('mongoose');
 const bikeRentalSchema = new mongoose.Schema({
   bike_rental_id: { type: String, required: true, unique: true },
   name: { type: String, required: true },
-  location_id: { type: String, required: true },
+  rentalId: { type: String, required: true },
   locationName: { type: String, required: true },
+  locations: {
+    village: String,
+    city: String,
+    state: String,
+  },
   description: { type: String },
   vehicle_types: { type: [String], default: [] }, // e.g., ["Mountain Bike", "Scooter"]
   pricing: {

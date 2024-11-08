@@ -6,14 +6,18 @@ const userSchema = new mongoose.Schema({
   name: { type: String, required: true },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
-  contact: { type: String}, // User's contact number
+  contact: { type: String }, // User's contact number
+  gender: { type: String, enum: ['Male', 'Female', 'Other'] }, // User's gender
   isVerified: { type: Boolean, default: false }, // Verification status
-  recentVisits: [{ 
-    packageId: { type: mongoose.Schema.Types.ObjectId, ref: 'Place' }, 
-    visitedAt: { type: Date, default: Date.now } 
-  }],
+  recentVisits: [
+    { 
+      packageId: { type: mongoose.Schema.Types.ObjectId, ref: 'package' }, 
+      visitedAt: { type: Date, default: Date.now },
+      status: { type: String, enum: ['Confirmed', 'Completed', 'Cancelled'], default: 'Confirmed' }
+    }
+  ],
   totalExpense: { type: Number, default: 0 }, // Total expenses of the user
-  token: { type: String }, // Token for authentication or verification
+  token: { type: String } // Token for authentication or verification
 });
 
 // Hash password before saving user
